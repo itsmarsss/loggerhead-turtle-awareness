@@ -163,11 +163,13 @@ p {
 #main-content {
     padding-top: 20px;
     font-family: "Poppins";
-    width: 100%;
+    width: 400%;
     background: var(--back);
     color: var(--text);
+    display: flex;
 }
 
 .section-text {
+    width: 100%;
     padding: 15px;
 }
