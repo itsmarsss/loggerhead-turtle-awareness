@@ -10,6 +10,7 @@
 
 body {
     margin: 0px;
+    background: var(--back-accent);
 }
 
 p {
@@ -162,10 +163,15 @@ p {
 
 #main-content {
     padding-top: 20px;
+    width: 100%;
     font-family: "Poppins";
-    width: 400%;
     background: var(--back);
     color: var(--text);
+    overflow-x: hidden;
+}
+
+#section-container {
+    width: 400%;
     display: flex;
 }
 
