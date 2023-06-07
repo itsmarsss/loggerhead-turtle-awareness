@@ -6,4 +6,9 @@ function toggleVid() {
     if (tglvd.innerHTML === "&lt;") {
         document.getElementById("video").pause();
     }
-} 
+}
+
+function slide(amt) {
+    const pctg = amt * 25;
+    document.getElementById("section-container").style.transform = `translateX(-${pctg}%)`
+}
