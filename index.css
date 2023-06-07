@@ -137,9 +137,17 @@ p {
 }
 
 .hidden {
-    -webkit-transform: translateX(355px);
-    -ms-transform: translateX(355px);
-    transform: translateX(355px);
+    animation: fadey-dad 500ms;
+}
+
+.hidden-img {
+    display: none;
+}
+
+@keyframes fadey-dad {
+    100% {
+        opacity: 0;
+    }
 }
 
 #toggle-video {
@@ -250,11 +258,11 @@ p {
         font-size: 15px;
     }
 
-    .hidden {
+    /* .hidden {
         -webkit-transform: translateX(290px);
         -ms-transform: translateX(290px);
         transform: translateX(290px);
-    }
+    } */
 
     #video-content {
         width: 100%;
@@ -267,11 +275,11 @@ p {
 }
 
 @media screen and (max-width: 393px) {
-    .hidden {
+    /* .hidden {
         -webkit-transform: translateX(360px);
         -ms-transform: translateX(360px);
         transform: translateX(360px);
-    }
+    } */
 }
 
 @media screen and (max-width: 314px) {
