@@ -118,6 +118,7 @@ p {
     border-left: var(--text) 3px solid;
     box-shadow: #000 0px 2px 4px 0px, #000 0px 2px 16px 0px;
     transition: 200ms ease-in;
+    z-index: 1;
 }
 
 .hidden {
@@ -171,6 +172,7 @@ p {
 }
 
 #section-container {
+    transition: 200ms ease-in;
     width: 400%;
     display: flex;
 }
