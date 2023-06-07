@@ -16,27 +16,26 @@ p {
     margin: 0px;
 }
 
-hr {
-    margin: 0px;
-}
-
 #topbar {
-    height: 40px;
+    height: 32px;
+    padding-top: 8px;
     font-family: "Poppins";
     background-color: var(--back-accent);
     color: var(--text);
     display: flex;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: #00000055 0px 4px 12px;
 }
 
 #left {
     margin-left: 5px;
-    padding-top: 5px;
     width: 50%;
 }
 
 #right {
     margin-right: 5px;
-    padding-top: 5px;
     width: 50%;
     text-align: right;
 }
@@ -93,19 +92,22 @@ hr {
     color: var(--text);
     font-weight: bold;
     font-size: 20px;
+    border-bottom: var(--text) 1px solid;
 }
 
 .section:hover {
-    filter: brightness(0.8);
+    background: var(--back-accent);
     width: 27.5%;
+    border-bottom: var(--text) 8px solid;
 }
 
 .section:active {
-    filter: brightness(0.85);
+    background: var(--back);
     width: 26.25%;
 }
 
 #main-content {
+    padding-top: 20px;
     font-family: "Poppins";
     width: 100%;
     background: var(--back);
