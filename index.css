@@ -113,6 +113,9 @@ p {
     padding: 10px;
     background: var(--back-accent);
     border-top-left-radius: 10px;
+    border-top: var(--text) 3px solid;
+    border-left: var(--text) 3px solid;
+    box-shadow: #000 0px 2px 4px 0px, #000 0px 2px 16px 0px;
 }
 
 #toggle-video {
