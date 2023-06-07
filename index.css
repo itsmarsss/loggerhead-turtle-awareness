@@ -266,6 +266,14 @@ p {
     }
 }
 
+@media screen and (max-width: 393px) {
+    .hidden {
+        -webkit-transform: translateX(360px);
+        -ms-transform: translateX(360px);
+        transform: translateX(360px);
+    }
+}
+
 @media screen and (max-width: 314px) {
     #topbar {
         height: 100px;
