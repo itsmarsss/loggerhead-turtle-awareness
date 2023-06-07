@@ -115,6 +115,38 @@ p {
     border-top-left-radius: 10px;
 }
 
+#toggle-video {
+    background: transparent;
+    font-family: "Poppins";
+    border: none;
+    border-radius: 5px;
+    color: var(--text);
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#toggle-video:hover {
+    background: var(--back-accent);
+    filter: brightness(0.8);
+    animation: infinite jiggle 2s;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
 #video {
     float: right;
     border-radius: 10px;
