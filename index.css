@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root {
+    --text: #ffffff;
+    --text-accent: #97ebdb;
+    --back: #282b91;
+    --back-accent: #1c1f6b;
+}
 
 body {
     margin: 0px;
@@ -33,37 +41,46 @@ p {
     text-align: center;
     font-family: "Poppins";
     top: 80px;
-    color: #fff;
+    color: var(--text);
 }
 
 #section-selector {
     width: 100%;
-    height: 50px;
-    background: blue;
+    height: 100px;
     display: flex;
+    gap: 1px;
+    padding-bottom: 1px;
+    background: var(--back-accent);
 }
 
 .section {
     font-family: "Poppins";
-    text-decoration: bold;
     width: 25%;
     text-align: center;
-    padding-top: 13px;
-    background: orange;
+    padding-top: 35px;
     transition: 200ms;
     cursor: pointer;
+    background: var(--back);
+    color: var(--text);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .section:hover {
     filter: brightness(0.8);
-    width: 30%;
+    width: 27.5%;
+}
+
+.section:active {
+    filter: brightness(0.85);
+    width: 26.25%;
 }
 
 #main-content {
-    width: 100%;
-    background: green;
-    color: #fff;
     font-family: "Poppins";
+    width: 100%;
+    background: var(--back);
+    color: var(--text);
 }
 
 .section-text {
