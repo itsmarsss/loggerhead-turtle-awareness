@@ -80,6 +80,7 @@ p {
 
 #actual-text {
     margin-top: 90px;
+    padding: 10px;
 }
 
 #section-selector {
@@ -224,4 +225,62 @@ p {
 .section-text {
     width: 100%;
     padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    #topbar {
+        height: 55px;
+    }
+
+    #main-text {
+        top: 63px;
+    }
+}
+
+@media screen and (max-width: 397px) {
+    #topbar {
+        height: 75px;
+    }
+
+    #main-text {
+        top: 83px;
+    }
+
+    .section {
+        font-size: 15px;
+    }
+
+    .hidden {
+        -webkit-transform: translateX(290px);
+        -ms-transform: translateX(290px);
+        transform: translateX(290px);
+    }
+
+    #video-content {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #video {
+        width: calc(100% - 40px);
+    }
+}
+
+@media screen and (max-width: 314px) {
+    #topbar {
+        height: 100px;
+        position: relative;
+    }
+
+    #main-text {
+        top: 108px;
+    }
+
+    #actual-text {
+        font-size: 20px;
+    }
+
+    .section {
+        font-size: 12px;
+    }
 }
