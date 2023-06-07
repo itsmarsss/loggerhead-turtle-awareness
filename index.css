@@ -16,6 +16,31 @@ p {
     margin: 0px;
 }
 
+hr {
+    margin: 0px;
+}
+
+#topbar {
+    height: 40px;
+    font-family: "Poppins";
+    background-color: var(--back-accent);
+    color: var(--text);
+    display: flex;
+}
+
+#left {
+    margin-left: 5px;
+    padding-top: 5px;
+    width: 50%;
+}
+
+#right {
+    margin-right: 5px;
+    padding-top: 5px;
+    width: 50%;
+    text-align: right;
+}
+
 #header {
     width: 100%;
     height: 250px;
@@ -37,19 +62,23 @@ p {
 
 #main-text {
     width: 100%;
+    height: 250px;
     position: absolute;
     text-align: center;
     font-family: "Poppins";
-    top: 80px;
+    top: 40px;
     color: var(--text);
+    backdrop-filter: blur(2px);
+}
+
+#actual-text {
+    margin-top: 90px;
 }
 
 #section-selector {
     width: 100%;
     height: 100px;
     display: flex;
-    gap: 1px;
-    padding-bottom: 1px;
     background: var(--back-accent);
 }
 
