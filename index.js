@@ -1,9 +1,5 @@
 function toggleVid() {
-    const vdcnt = document.getElementById("video-content");
-    vdcnt.classList.toggle("hidden");
-    setTimeout(function () {
-        document.getElementById("video").classList.toggle("hidden-img");
-    }, 500);
+    document.getElementById("video").classList.toggle("hidden-img");
 
     const tglvd = document.getElementById("toggle-video");
     tglvd.innerHTML = (tglvd.innerHTML === "&lt;" ? "&gt;" : "&lt;");
