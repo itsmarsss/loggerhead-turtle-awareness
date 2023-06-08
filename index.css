@@ -74,8 +74,8 @@ p {
     font-family: "Poppins";
     top: 40px;
     color: var(--text);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
 }
 
 #actual-text {
