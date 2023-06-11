@@ -9,6 +9,8 @@ The endangerment of loggerhead sea turtles stems from various factors. Accidenta
 # Existing initiatives:
 Efforts to protect loggerhead sea turtles, an endangered species, have been undertaken by the government. One initiative is Nesting Beach Protection, which involves monitoring nesting beaches and implementing barriers to safeguard their eggs from predators. In certain cases, nests are relocated to safer areas. Another measure is the use of Turtle Excluder Devices, which selectively capture shrimp and fish while allowing larger marine life, including loggerhead sea turtles, to escape as bycatch prevention. Marine Protected Areas, legally designated ocean regions, serve as havens to shield marine life, including loggerhead sea turtles.
 
+![Turtle Excluder Device](ted.jpg)
+
 # Awareness Campaign Idea
 To address the various challenges faced by loggerhead sea turtles, a comprehensive approach could involve a combination of habitat and conservatory measures. One potential solution is the creation of a 3-D habitat structure that accommodates both their land-based and underwater needs. This structure could feature a split design, with half situated on land and half underwater.
 
