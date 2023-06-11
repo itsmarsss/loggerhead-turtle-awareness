@@ -203,7 +203,6 @@ p {
 }
 
 #main-content {
-    padding-top: 20px;
     width: 100%;
     font-family: "Poppins";
     background: var(--back);
