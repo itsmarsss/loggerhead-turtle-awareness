@@ -15,7 +15,12 @@ body {
 
 p {
     margin: 0px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.media {
+    width: 100%;
+    border-radius: 50px;
 }
 
 #topbar {
@@ -223,6 +228,15 @@ p {
 .section-text {
     width: 100%;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.constrainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    min-width: 300px;
 }
 
 @media screen and (max-width: 767px) {

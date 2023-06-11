@@ -1,3 +1,5 @@
+![LoggerHead Turtle](loggerhead_turtle.jpg)
+
 # Basic Information:
 Loggerhead sea turtles, with their large, robust shells, are predominantly found in tropical waters of the Atlantic, Pacific, and Indian Oceans. These highly migratory creatures travel an average distance of 7,500 miles between their breeding beaches and hunting grounds. While they breed on land, loggerhead sea turtles spend the majority of their time submerged in water. Presently, their population in the wild stands at approximately 200,000 individuals.
 
@@ -16,7 +18,7 @@ The land-based section of the habitat would primarily focus on mitigating the im
 
 The urgency for such measures is highlighted by the decline in the loggerhead sea turtle population. Statistics reveal a significant drop in loggerhead numbers in the wild, underscoring the need for immediate conservation efforts. By comparing the current living conditions of loggerhead turtles to the ideal conditions provided by the proposed 3-D habitat structure, the importance of creating a safe and suitable environment for these turtles, as well as other marine life, becomes evident.
 
-## One Possible Solution Involing TED
+## One Possible Solution Involving TED
 
 One potential solution to address the issue of ocean plastic pollution involves implementing a payment system based on the weight of plastic collected. This incentivizes individuals or organizations to actively participate in cleaning up marine debris, including the majority of polyethylene plastics.
 
