@@ -285,8 +285,10 @@
             </div>
             <div id="phys-text" class="section-text">
                 <div class="constrainer" id="cons-phys">
-                    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/STLLoader.js"></script>
+                    <script src="path/to/your/three.min.js"></script>
+                    <script src="path/to/your/STLLoader.js"></script>
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
                     <script>
                         const scene = new THREE.Scene();
                         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -307,8 +309,11 @@
                         light.position.set(1, 1, 1);
                         scene.add(light);
 
+                        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+
                         function animate() {
                             requestAnimationFrame(animate);
+                            controls.update();
                             renderer.render(scene, camera);
                         }
 
