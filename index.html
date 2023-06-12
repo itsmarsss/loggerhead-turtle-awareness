@@ -285,30 +285,39 @@
             </div>
             <div id="phys-text" class="section-text">
                 <div class="constrainer" id="cons-phys">
+                    <div id="canvas-container"></div>
                     <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/build/three.min.js"></script>
                     <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/STLLoader.js"></script>
                     <script
                         src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
                     <script>
                         const scene = new THREE.Scene();
+                        scene.background = new THREE.Color(0x282b91);
+
                         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
                         const renderer = new THREE.WebGLRenderer();
                         renderer.setSize(window.innerWidth, window.innerHeight);
-                        document.body.appendChild(renderer.domElement);
+                        document.getElementById("canvas-container").appendChild(renderer.domElement);
 
                         const loader = new THREE.STLLoader();
-                        loader.load("assets/new_ted_model.stl", function (geometry) {
+                        loader.load("https://itsmarsss.github.io/LoggerHead-Turtle-Awareness/assets/new_ted_model.stl", function (geometry) {
                             const material = new THREE.MeshNormalMaterial();
                             const mesh = new THREE.Mesh(geometry, material);
                             scene.add(mesh);
-                        });
 
-                        camera.position.z = 5;
+                            const box = new THREE.Box3().setFromObject(mesh);
+                            const center = box.getCenter(new THREE.Vector3());
+
+                            const modelSize = box.getSize(new THREE.Vector3());
+                            const modelBoundingRadius = modelSize.length() * 0.5;
+                            const distance = modelBoundingRadius / Math.tan(Math.PI * 0.5 * camera.fov / 180);
+                            camera.position.set(center.x, center.y, distance * 2);
+                            camera.lookAt(center);
+                        });
 
                         const light = new THREE.DirectionalLight(0xffffff, 1);
                         light.position.set(1, 1, 1);
                         scene.add(light);
-                        scene.background = new THREE.Color(0x282b91);
 
                         const controls = new THREE.OrbitControls(camera, renderer.domElement);
 

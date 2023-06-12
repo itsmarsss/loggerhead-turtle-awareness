@@ -239,6 +239,15 @@ p {
     min-width: 300px;
 }
 
+#canvas-container {
+    width: 100%;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
 @media screen and (max-width: 767px) {
     #topbar {
         height: 55px;
