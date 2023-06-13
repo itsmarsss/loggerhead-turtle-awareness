@@ -18,9 +18,21 @@ p {
     margin-bottom: 20px;
 }
 
+subtitle {
+    font-size: 13px;
+    text-align: center;
+    transform: translateY(-20px);
+    transition: 200ms;
+}
+
 .media {
     width: 100%;
     border-radius: 50px;
+    z-index: 1;
+}
+
+.media:hover+subtitle {
+    transform: translateY(0px);
 }
 
 #topbar {
@@ -36,7 +48,7 @@ p {
     display: flex;
     position: sticky;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     -webkit-box-shadow: #00000055 0px 4px 12px;
     box-shadow: #00000055 0px 4px 12px;
 }
@@ -139,7 +151,7 @@ p {
     -webkit-transition: 200ms ease-in;
     -o-transition: 200ms ease-in;
     transition: 200ms ease-in;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hidden-img {
@@ -246,6 +258,7 @@ p {
 canvas {
     width: 100% !important;
     height: 100% !important;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 767px) {
