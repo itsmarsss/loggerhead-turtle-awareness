@@ -266,6 +266,7 @@ canvas {
     width: 100% !important;
     height: 100% !important;
     border-radius: 50px;
+    cursor: all-scroll;
 }
 
 @media screen and (max-width: 767px) {
