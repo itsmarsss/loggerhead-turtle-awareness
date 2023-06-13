@@ -26,6 +26,11 @@ subtitle {
     opacity: 0;
 }
 
+.displayed {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 .media {
     width: 100%;
     border-radius: 50px;
