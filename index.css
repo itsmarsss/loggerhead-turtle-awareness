@@ -23,6 +23,7 @@ subtitle {
     text-align: center;
     transform: translateY(-20px);
     transition: 200ms;
+    opacity: 0;
 }
 
 .media {
@@ -33,6 +34,7 @@ subtitle {
 
 .media:hover+subtitle {
     transform: translateY(0px);
+    opacity: 1;
 }
 
 #topbar {
