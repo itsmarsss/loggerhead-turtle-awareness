@@ -270,6 +270,16 @@ canvas {
     cursor: all-scroll;
 }
 
+#footer {
+    font-family: "Poppins";
+    color: #fff;
+    font-size: 11px;
+}
+
+#footer-header {
+    margin-left: 10px;
+}
+
 @media screen and (max-width: 767px) {
     #topbar {
         height: 55px;
