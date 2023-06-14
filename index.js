@@ -33,5 +33,5 @@ function slide(amt) {
         } else if (amt == 3) {
             phys.style.display = "flex";
         }
-    }, 200);
+    }, 400);
 }
