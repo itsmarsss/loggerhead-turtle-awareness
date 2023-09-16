@@ -380,7 +380,7 @@
                         document.getElementById("canvas-container").appendChild(renderer.domElement);
 
                         const loader = new THREE.STLLoader();
-                        loader.load("https://itsmarsss.github.io/LoggerHead-Turtle-Awareness/assets/new_ted_model.stl", function (geometry) {
+                        loader.load("assets/new_ted_model.stl", function (geometry) {
                             const material = new THREE.MeshNormalMaterial();
                             const mesh = new THREE.Mesh(geometry, material);
                             scene.add(mesh);
