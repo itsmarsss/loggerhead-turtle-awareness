@@ -18,6 +18,11 @@ p {
     margin-bottom: 20px;
 }
 
+li {
+    line-break: anywhere;
+    padding-right: 20px;
+}
+
 subtitle {
     font-size: 13px;
     text-align: center;
@@ -26,6 +31,8 @@ subtitle {
     transition: 200ms;
     opacity: 0;
 }
+
+
 
 .displayed {
     transform: translateY(0px);
