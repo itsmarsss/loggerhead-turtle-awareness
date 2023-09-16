@@ -215,7 +215,33 @@ canvas {
     }
 }
 
-@media screen and (max-width: 397px) {
+@media screen and (max-width: 450px) {
+    .section-text {
+        width: 100vw;
+    }
+
+    #section-container {
+        -webkit-transition: 200ms ease-in;
+        -o-transition: 200ms ease-in;
+        transition: 200ms ease-in;
+        width: 400vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .constrainer {
+        width: 70%;
+        min-width: auto;
+    }
+
+    .section-text {
+        padding: 0;
+        padding-top: 15px;
+    }
+}
+
+@media screen and (max-width: 398px) {
     #topbar {
         height: 75px;
     }
@@ -226,15 +252,6 @@ canvas {
 
     .section {
         font-size: 15px;
-    }
-
-    #video-content {
-        width: 100%;
-        padding: 0px;
-    }
-
-    #video {
-        width: calc(100% - 40px);
     }
 }
 
@@ -252,7 +269,4 @@ canvas {
         font-size: 20px;
     }
 
-    .section {
-        font-size: 12px;
-    }
 }
